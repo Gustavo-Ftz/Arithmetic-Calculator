@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ADD8E6;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(61, 60, 60);
+
+}
+
+.displayScreen {
+    display: flex;   
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+#displayExpression {
+    height: 70px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerButtons {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.btOperButtons {
+    margin-top: 05px;
+    width: 90px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: rgb(90, 89, 89);
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.btOperButtons:hover {
+    background-color: rgb(38, 38, 39);
+    cursor: pointer;
+}
+
+#btNumComma {
+    text-align: center;
+}
+
+#btOperEquality {
+    background-color: rgb(48, 102, 190);
+}
+
+#btOperEquality:hover {
+    background-color: blue;
+}
+
+#infoFooter {
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  font: bold 12pt Arial;
+}
+
+footer > p > a {
+    color: white;
+}
+
+#btNothing {
+    visibility: hidden;
+
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font: bold 20pt arial black;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        height: 350px;
+    }
+
+    .displayScreen {
+        align-items: center;
+    }
+
+    #displayExpression {
+        height: 40px;
+        width: 255px;
+        font-size: 18px;
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btOperButtons {
+        width: 60px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .btOperButtons:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    #infoFooter {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font: bold 15pt arial black;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        height: 280px;
+    }
+
+    .displayScreen {
+        align-items: center;
+    }
+
+    #displayExpression {
+        height: 35px;
+        width: 215px;
+        font-size: 15px;
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btOperButtons {
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .btOperButtons:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    #infoFooter {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 240px) {
+    h1 {
+        font: bold 10pt arial black;
+        margin-bottom: 8px;
+    }
+
+    nav {
+        height: 160px;
+        width: 136px;
+    }
+
+    .displayScreen {
+        align-items: center;
+    }
+
+    #displayExpression {
+        height: 15px;
+        width: 118px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btOperButtons {
+        width: 25px;
+        height: 10px;
+        font-size: 8px;
+    }
+
+    .btOperButtons:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    #infoFooter {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 140px) {
+    body {
+        background-color: #ADD8E6;
+    }
+
+    h1 {
+        font: bold 8pt arial black;
+        margin-bottom: 3px;
+    }
+
+    nav {
+        height: 150px;
+        width: 100px;
+    }
+
+    .displayScreen {
+        align-items: center;
+    }
+
+    #displayExpression {
+        height: 10px;
+        width: 80px;
+        font-size: 5px;
+        border-radius: 4px;
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btOperButtons {
+        width: 15px;
+        height: 8px;
+        font-size: 6px;
+    }
+
+    .btOperButtons:hover {
+        background-color: rgb(90, 89, 89);
+    }
+
+    #infoFooter {
+        font-size: 5px;
+    }
+}

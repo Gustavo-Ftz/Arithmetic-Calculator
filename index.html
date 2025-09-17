@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <nav>
+            <div class="displayScreen">
+                <input type="text" id="displayExpression">
+            </div>
+            <div class="containerButtons">
+                <div class="buttonsItemsOperators">
+                    <input type="button" class="btOperButtons" value="(" id="btOpenParenthesis">
+                    <input type="button" class="btOperButtons" value=")" id="btCloseParenthesis">
+                    <input type="button" class="btOperButtons" value="²√x" id="btSquareRoot">
+                    <input type="button" class="btOperButtons" id="btNothing">
+                </div>
+                <div class="buttonsItemsOperators">
+                    <input type="button" class="btOperButtons" value="%" id="btOperPercentage">
+                    <input type="button" class="btOperButtons" value="x²" id="btOperExponentiation">
+                    <input type="button" class="btOperButtons" value="C" id="btOperClearAll">
+                    <input type="button" class="btOperButtons" value="CE" id="btOperClearEntry">
+                </div>
+                <div class="buttonsItemsOperators">
+                    <input type="button" class="btOperButtons" value="7" id="btNumSeven">
+                    <input type="button" class="btOperButtons" value="8" id="btNumEight">
+                    <input type="button" class="btOperButtons" value="9" id="btNumNine">
+                    <input type="button" class="btOperButtons" value="+" id="btOperAddition">
+                </div>
+                <div class="buttonsItems1">
+                    <input type="button" class="btOperButtons" value="4" id="btNumFour">
+                    <input type="button" class="btOperButtons" value="5" id="btNumFive">
+                    <input type="button" class="btOperButtons" value="6" id="btNumSix">
+                    <input type="button" class="btOperButtons" value="-" id="btOperSubtraction">
+
+                    <div class="buttonsItems2">
+                        <input type="button" class="btOperButtons" value="1" id="btNumOne">
+                        <input type="button" class="btOperButtons" value="2" id="btNumTwo">
+                        <input type="button" class="btOperButtons" value="3" id="btNumThree">
+                        <input type="button" class="btOperButtons"  value="x" id="btOperMultiplication">
+                    </div>
+
+                    <div class="buttonsItems3">
+                        <input type="button" class="btOperButtons" value="0" id="btNumZero">
+                        <input type="button" value="=" class="btOperButtons" id="btOperEquality">
+                        <input type="button" class="btOperButtons" value="," id="btNumComma">
+                        <input type="button" class="btOperButtons" value="÷" id="btOperDivision">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </main>
+
+    <footer>
+        <p id="infoFooter">&copy;Criado por <a href="https://github.com/Gustavo-Ftz" target="_blank">Gustavo Feitoza</a>. <span id="ano"></span></p>
+    </footer>
+
+    <script>
+        function yearCurrent() {
+        const anoAtual = new Date().getFullYear();
+        document.getElementById("ano").textContent = anoAtual;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
